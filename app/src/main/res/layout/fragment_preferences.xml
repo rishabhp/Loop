@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.looper.loop.PreferencesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_gravity="left|top"
+        android:padding="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderPreferenceLabel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meet With:"
+                    android:textSize="12pt"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderPreferenceLabel"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="#ffe6e6e6">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Men"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:padding="10dp"
+                    android:textSize="8pt"
+                    android:id="@+id/male" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Women"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:padding="10dp"
+                    android:textSize="8pt"
+                    android:id="@+id/female" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:padding="10dp"
+                    android:textSize="8pt"
+                    android:id="@+id/others" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
